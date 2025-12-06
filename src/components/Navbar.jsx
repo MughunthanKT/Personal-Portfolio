@@ -27,7 +27,7 @@ export const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
+const base = import.meta.env.BASE_URL;
   return (
     <nav
       className={cn(
@@ -40,7 +40,7 @@ export const Navbar = () => {
           className="text-xl font-bold text-primary flex items-center"
           href="#hero"
         >
-          <img className="logo-image" src="/projects/Mughi Logo.png" alt="logo" />
+          <img className="logo-image" src={`${base}projects/Mughi Logo.png`} alt="logo" />
         </a>
 
         {/* Desktop Nav */}

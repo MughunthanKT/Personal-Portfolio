@@ -3,7 +3,8 @@ import "./Gallery.css";
 
 
 export const GallerySection = () => {
- return (
+ const base = import.meta.env.BASE_URL;
+  return (
    <section className="gallery-section" id="gallery">
      <header className="gallery-header">
        <h1>My Gallery</h1>
@@ -15,7 +16,7 @@ export const GallerySection = () => {
      <section className="gallery-row">
        <div className="gallery-row-inner">
          <div className="gallery-photo">
-           <img src="/projects/professional photo.jpg" alt="Professional" />
+           <img src={`${base}projects/professional photo.jpg`} alt="Professional" />
          </div>
 
 
@@ -58,7 +59,7 @@ export const GallerySection = () => {
      <section className="gallery-row">
        <div className="gallery-row-inner">
          <div className="gallery-photo">
-           <img src="/projects/Aesthetic.jpg" alt="Aesthetic" />
+           <img src={`${base}projects/Aesthetic.jpg`}alt="Aesthetic" />
          </div>
 
 
@@ -110,7 +111,7 @@ export const GallerySection = () => {
      <section className="gallery-row">
        <div className="gallery-row-inner">
          <div className="gallery-photo">
-           <img src="/projects/passion-2.jpg" alt="Passionate" />
+           <img src={`${base}projects/passion-2.jpg`} alt="Passionate" />
          </div>
 
 
@@ -147,7 +148,7 @@ export const GallerySection = () => {
 
          <div className="gallery-video-player">
            <video
-             src="/projects/COFFEE.MP4"
+             src={`${base}projects/COFFEE.MP4`}
              controls   
              preload="metadata"
            />

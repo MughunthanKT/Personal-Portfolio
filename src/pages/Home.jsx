@@ -5,7 +5,7 @@ import { HeroSection } from "../components/HeroSection";
 import { AboutSection } from "../components/AboutSection";
 import { SkillsSection } from "../components/SkillsSection";
 import { GallerySection } from "../components/GallerySection"
-import { ProjectsSection } from "../components/ProjectsSection";
+import { ProjectsSection } from "../components/projectsSection";
 
 import { ContactSection } from "../components/ContactSection";
 import { Footer } from "../components/Footer";

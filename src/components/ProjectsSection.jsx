@@ -33,6 +33,7 @@ const projects = [
 ];
 
 export const ProjectsSection = () => {
+  const base = import.meta.env.BASE_URL;
   return (
     <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
@@ -54,7 +55,7 @@ export const ProjectsSection = () => {
             >
               <div className="h-48 overflow-hidden">
                 <img
-                  src={project.image}
+                  src={`${base}${project.image}`}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
