@@ -92,11 +92,7 @@ export const ProjectsSection = () => {
 
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
-<<<<<<< HEAD
-                  {project.tags.map((tag) => (
-=======
                   {project.tags.filter((tag) => tag?.trim()).map((tag) => (
->>>>>>> e92e7fa (Final changes)
                     <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
                       {tag}
                     </span>
@@ -107,12 +103,7 @@ export const ProjectsSection = () => {
                 <p className="text-muted-foreground text-sm mb-4">
                   {project.description}
                 </p>
-<<<<<<< HEAD
                 <div className="flex justify-between items-center">
-=======
-              </div>
-              <div className="flex justify-between items-center">
->>>>>>> e92e7fa (Final changes)
                   <div className="flex space-x-3">
                     <a
                       href={project.demoUrl}
@@ -121,21 +112,9 @@ export const ProjectsSection = () => {
                     >
                       <ExternalLink size={20} />
                     </a>
-<<<<<<< HEAD
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <Github size={20} />
-                    </a>
                   </div>
                 </div>
               </div>
-=======
-                  </div>
-                </div>
->>>>>>> e92e7fa (Final changes)
             </div>
           ))}
         </div>
