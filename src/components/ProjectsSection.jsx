@@ -30,6 +30,35 @@ const projects = [
     demoUrl: "#",
     githubUrl: "#",
   },
+  {
+    id: 4,
+    title: "Interactive Soundscape Project",
+    description:
+      "A Chance Driven Sound Performance.",
+    image: "/projects/Screenshot 2026-05-17 at 9.13.49 PM.png",
+    tags: [""],
+    demoUrl: "public/projects/25185551 Interactive Soundscape Project.pdf",
+    githubUrl: "#",
+  },
+  {
+    id: 5,
+    title: "Laser Cut",
+    description: "Mobile Stand Redesign.",
+    image: "/projects/Screenshot 2026-05-17 at 9.26.43 PM.png",
+    tags: [""],
+    demoUrl: "#",
+    githubUrl: "#",
+  },
+  {
+    id: 6,
+    title: "Modular and Interactive Sculpture",
+    description:
+      "For this project, I built the Black Hole.",
+    image: "/projects/PHOTO-2026-05-14-17-51-21.jpg",
+    tags: [""],
+    demoUrl: "/public/projects/Group04_Final_Report_Modular & Interactive Sculpture.pdf",
+    githubUrl: "#",
+  },
 ];
 
 export const ProjectsSection = () => {
@@ -63,7 +92,11 @@ export const ProjectsSection = () => {
 
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
+<<<<<<< HEAD
                   {project.tags.map((tag) => (
+=======
+                  {project.tags.filter((tag) => tag?.trim()).map((tag) => (
+>>>>>>> e92e7fa (Final changes)
                     <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
                       {tag}
                     </span>
@@ -74,7 +107,12 @@ export const ProjectsSection = () => {
                 <p className="text-muted-foreground text-sm mb-4">
                   {project.description}
                 </p>
+<<<<<<< HEAD
                 <div className="flex justify-between items-center">
+=======
+              </div>
+              <div className="flex justify-between items-center">
+>>>>>>> e92e7fa (Final changes)
                   <div className="flex space-x-3">
                     <a
                       href={project.demoUrl}
@@ -83,6 +121,7 @@ export const ProjectsSection = () => {
                     >
                       <ExternalLink size={20} />
                     </a>
+<<<<<<< HEAD
                     <a
                       href={project.githubUrl}
                       target="_blank"
@@ -93,6 +132,10 @@ export const ProjectsSection = () => {
                   </div>
                 </div>
               </div>
+=======
+                  </div>
+                </div>
+>>>>>>> e92e7fa (Final changes)
             </div>
           ))}
         </div>
